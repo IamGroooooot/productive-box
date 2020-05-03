@@ -15,4 +15,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 1a61e88bc08905c0683eb28e5c6814e9
-          LOCALE: ko_KR
+          LOCALE: ko-KR
