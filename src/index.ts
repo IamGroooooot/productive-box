@@ -71,10 +71,10 @@ interface IRepo {
   if (!sum) return;
 
   const oneDay = [
-    { label: '🌞Morning', commits: morning },
-    { label: '🌆Daytime', commits: daytime },
-    { label: '🌃Evening', commits: evening },
-    { label: '🌙Night', commits: night },
+    { label: '🌞 Morning', commits: morning },
+    { label: '🌆 Daytime', commits: daytime },
+    { label: '🌃 Evening', commits: evening },
+    { label: '🌙 Night', commits: night },
   ];
 
   const lines = oneDay.reduce((prev, cur) => {
@@ -101,6 +101,7 @@ interface IRepo {
   const filename = Object.keys(gist.data.files)[0];
   await octokit.gists.update({
     gist_id: process.env.GIST_ID,
+    description: process.env.GIST_DESCRIPTION ?? 'powered by https://github.com/maxam2017/productive-box',
     files: {
       [filename]: {
         // eslint-disable-next-line quotes
