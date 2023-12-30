@@ -88,9 +88,9 @@ interface IRepo {
 
   const oneDay = [
     { label: '🌞 아침', commits: morning },
-    { label: '🌆 낮', commits: daytime },
+    { label: '🌆 낮 ', commits: daytime },
     { label: '🌃 저녁', commits: evening },
-    { label: '🌙 밤', commits: night },
+    { label: '🌙 밤 ', commits: night },
   ];
 
   const lines = oneDay.reduce((prev, cur) => {
