@@ -124,7 +124,7 @@ interface IRepo {
         filename:
           morning + daytime > evening + night
             ? "🌅 아침형 모드 - 아침 일찍 🐤 활기차게 작업 중!"
-            : "🌌 야행성 모드 - 조용한 밤 🦉 조용히 작업 중!",
+            : "🌌 야행성 모드 - 조용한 밤 🦉 집중하며 작업 중!",
         content: lines.join('\n'),
       },
     },
